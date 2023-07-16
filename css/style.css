@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 100vh;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: rgb(11, 11, 11);
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-logo {
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.navbar__link {
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.menu__line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+@media all and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    
+    .active {
+        display: flex;
+    }
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-image.jpg);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero__title {
+    color: wheat;
+    font-size: 36px;
+}
+
+.about-section,
+.contact-section {
+    background-color: #0D1B2A;
+    padding: 20px 10%;
+    color: #E0E1DD;
+}
+
+.about-section__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.skills-section {
+    background-color: #415A77;
+    padding: 20px 10%;
+    color: #E0E1DD;
+}
+
+.contact-section__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px;
+}
+
+.contact-section__form input {
+    padding: 10px;
+}
+
+.contact-section_link {
+    color: #E0E1DD;
+}
+
+.contact-section__button {
+    width: min-content;
+    margin-bottom: 20px;
+}
+
+.contact-section__button:hover {
+    transform: scale(1.5);
+    color: green;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+

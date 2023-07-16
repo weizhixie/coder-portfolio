@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WX Portfolio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">W.XIE</div>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="navbar__link">Home</a>
+            <a href="#about" class="navbar__link">About</a>
+            <a href="#skills" class="navbar__link">Skills</a>
+            <a href="#contact" class="navbar__link">Contact</a>
+        </nav>
+
+        <div class="menu" id="toggleButton">
+            <div class="menu__line"></div>
+            <div class="menu__line"></div>
+            <div class="menu__line"></div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero.inner">
+            <h2 class="hero__title">Hi, I am a coder</h2>
+            <p class="hero__para"></p>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2 class="about-section__title">About me</h2>
+        <p class="about-section__para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptates porro
+            dolore sed quo. Sit nisi dolorum dignissimos quae! Numquam quibusdam inventore consequuntur velit quisquam
+            magni blanditiis maiores accusantium maxime? <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptates porro
+            dolore sed quo. Sit nisi dolorum dignissimos quae! Numquam quibusdam inventore consequuntur velit quisquam
+            magni blanditiis maiores accusantium maxime? <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptates porro
+            dolore sed quo. Sit nisi dolorum dignissimos quae! Numquam quibusdam inventore consequuntur velit quisquam
+            magni blanditiis maiores accusantium maxime?
+        </p>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <h2 class="skills-section__title">Tools & Skills</h2>
+        <p class="skills-section_para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptates porro
+            dolore sed quo. Sit nisi dolorum dignissimos quae! Numquam quibusdam inventore consequuntur velit quisquam
+            magni blanditiis maiores accusantium maxime? <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptates porro
+            dolore sed quo. Sit nisi dolorum dignissimos quae! Numquam quibusdam inventore consequuntur velit quisquam
+            magni blanditiis maiores accusantium maxime? <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptates porro
+            dolore sed quo. Sit nisi dolorum dignissimos quae! Numquam quibusdam inventore consequuntur velit quisquam
+            magni blanditiis maiores accusantium maxime?
+        </p> <br />
+        <ul class="skill-list">
+            <li class="skill-list__item">HTML, CSS, Bootstrap</li>
+            <li class="skill-list__item">Skill 2</li>
+            <li class="skill-list__item">Skill 3</li>
+        </ul>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="contact-section__title">Contact</h2>
+        <form class="contact-section__form" action="#">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstName" placeholder="Your first name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="hello@hello.com" />
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+
+            <input class="contact-section__button" type="submit" value="Submit">
+        </form>
+
+        <h3>Email:</h3>
+        <a class="contact-section_link" href="mailto:hello@google.com">hello@google.com</a>
+
+        <h3>Github:</h3>
+        <a class="contact-section_link" href="https://github.com/weizhixie" target="_blank"><img
+                src="./images/iconmonstr-github-1.svg" /></a>
+    </section>
+
+    <footer>
+        <p class="copyright">Copyright &copy; W.Xie 2023 | &nbsp;</p>
+        <a href="https://github.com/weizhixie" target="_blank"><img src="./images/iconmonstr-github-1.svg" /></a>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const navbar = document.getElementById('navbar');
+
+    toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+
+</html>
